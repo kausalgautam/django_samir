@@ -4,7 +4,7 @@ from django.utils import  timezone
 
 # Create your models here.
 class Posts(models.Model):
-    objects = "objjjjj"
+    objects = "movie1"
     STATUS_CHOICES= (
         ('draft','Drafts'),
         ('published','Published'),
@@ -14,7 +14,7 @@ class Posts(models.Model):
     content=models.TextField()
     seo_title = models.CharField(max_length=50)
     seo_description = models.CharField(max_length=50)
-    author=models.ForeignKey(User, related_name='blog_posts',on_delete=models.CASCADE,)
+    author=models.ForeignKey(User, related_name='blog_posts',on_delete=models.CASCADE)
     published=models.DateTimeField(default=timezone.now)
     created=models.DateTimeField(auto_now_add=True)
     updated=models.DateTimeField(auto_now=True)
