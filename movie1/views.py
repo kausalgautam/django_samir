@@ -36,10 +36,7 @@ def listofposts(request):
     arrrg={'post':post}
     return render(request , 'movie1/listofposts.html', arrrg )
 
-def posts_detail(request , slug):
 
-    post=get_object_or_404(Posts , slug=slug)
-    return render(request , 'movie1/posts_detail.html' , {'post':post})
 
 
 def facebook(request):

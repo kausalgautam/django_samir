@@ -11,7 +11,7 @@ urlpatterns = [
     path('listofposts', views.listofposts, name='listofposts'),
     path('facebook', views.facebook, name='facebook'),
 
-    re_path('(?P<slug>[\W-]+)/$' ,  views.posts_detail, name='postsdetail'),
+  
 
 
 ]
