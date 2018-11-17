@@ -33,7 +33,8 @@ def vollyball(request):
 
 def listofposts(request):
     post=Posts.objects.all().order_by('published')
-    return render(request , 'movie1/listofposts.html' , {"post":post})
+    arrrg={'post':post}
+    return render(request , 'movie1/listofposts.html', arrrg )
 
 def posts_detail(request , slug):
 
