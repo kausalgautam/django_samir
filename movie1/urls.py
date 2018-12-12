@@ -8,13 +8,12 @@ urlpatterns = [
     path('cricket', views.cric, name='cric'),
     path('football', views.football, name='football'),
     path('vollyball', views.vollyball, name='vollyball'),
-    path('listofposts', views.listofposts, name='listofposts'),
     path('facebook', views.facebook, name='facebook'),
+
+    ]
 
   
 
-
-]
 
 
 

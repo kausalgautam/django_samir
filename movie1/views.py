@@ -1,5 +1,4 @@
 from django.shortcuts import HttpResponse, render_to_response
-from movie1.models import Posts
 from django.shortcuts import render,get_object_or_404
 
 
@@ -31,10 +30,6 @@ def vollyball(request):
     return render_to_response('movie1/vollyball.html', {"message": message})
 
 
-def listofposts(request):
-    post=Posts.objects.all().order_by('published')
-    arrrg={'post':post}
-    return render(request , 'movie1/listofposts.html', arrrg )
 
 
 
