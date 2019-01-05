@@ -4,7 +4,7 @@ from django.utils import  timezone
 
 # Create your models here.
 class Posts(models.Model):
-    objects = "movie1"
+    
     STATUS_CHOICES= (
         ('draft','Drafts'),
         ('published','Published'),
