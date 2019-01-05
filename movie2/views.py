@@ -13,12 +13,6 @@ def listofposts(request):
 
 
 
-def inside(request):
-    message = "Cwelcome"
-
-    return render_to_response('movie2/inside.html', {"message": message})
-
-
 
 
 	

@@ -7,7 +7,7 @@ app_name='movie2'
 urlpatterns = [
 
     path('listofposts', views.listofposts, name='listofposts'),
-    path('inside/', views.inside, name='inside'),
+    
    
 
    ]
