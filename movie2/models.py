@@ -3,7 +3,7 @@ from django.contrib.auth.models import  User
 from django.utils import  timezone
 
 # Create your models here.
-class Posts(models.Model):
+class Posts(models.Model): #i have listed these data in 'post' thus object of this databse is 'post' .also see in views
     
     STATUS_CHOICES= (
         ('draft','Drafts'),

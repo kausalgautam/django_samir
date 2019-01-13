@@ -1,0 +1,42 @@
+ {% extends 'base.html' %}
+ {% load crispy_forms_tags %}
+ {% load static %}
+
+ {% block blogproblem %} {% endblock %}
+     {% block body %}
+ }
+ }
+
+<div style="margin-left:auto;margin-right:auto;width:250px">  
+	 
+	<form method ="POST">
+		{% csrf_token %}
+		<h2>JOIN TODAY</h2>
+
+		
+			{{ form|crispy }}
+
+
+	<br>
+	<button type="submit" class="btn btn-outline-success" style="height:50px;width:100px"  ><h3>Sign Up</h3></button>
+	<hr>
+
+
+
+<div>
+	<strong >Already a member?</strong> <a class="ml-2" href="#"><h3>Sign In</h3></a>
+</div>
+</form>
+	</div>
+	
+	
+
+
+{% endblock %}
+
+
+{% block content1 %}{% endblock %}
+{% block content2 %}{% endblock %}
+
+
+

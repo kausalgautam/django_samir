@@ -32,6 +32,8 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'movie1.apps.Movie1Config',
+    'users.apps.UsersConfig',
+    'crispy_forms',
     'movie2.apps.Movie2Config',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -78,12 +80,8 @@ WSGI_APPLICATION = 'vijay1.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'bowl',
-        'USER' : 'postgres',
-        'PASSWORD' : 'kausal3gautam###',
-        'HOST' : 'localhost',
-        'PORT' : '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
@@ -134,6 +132,8 @@ STATICFILES_DIRS = [
 ]
 # location where django collect all static files
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+
+CRISPY_TEMPLATE_PACK='bootstrap4'
 
 
 
