@@ -77,17 +77,17 @@ WSGI_APPLICATION = 'vijay1.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'bowl',
+        'NAME': 'postgres',
         'USER': 'postgres',
         'PASSWORD': 'kausal3gautam###',
         'HOST': 'localhost',
         'PORT': '5432',
     }
 }
+
 
 
 # Password validation
