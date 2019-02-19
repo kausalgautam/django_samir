@@ -31,10 +31,10 @@ ALLOWED_HOSTS = []
 # Applica tion definition
 
 INSTALLED_APPS = [
+    'movie2.apps.Movie2Config',
     'movie1.apps.Movie1Config',
     'users.apps.UsersConfig',
     'crispy_forms',
-    'movie2.apps.Movie2Config',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
