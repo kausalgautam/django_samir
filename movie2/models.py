@@ -3,13 +3,14 @@ from django.contrib.auth.models import  User
 from django.utils import  timezone
 
 # Create your models here.
-class Posts(models.Model): #i have listed these data in 'post' thus object of this databse is 'post' .also see in views
+class Blog(models.Model): #i have listed these data in 'post' thus object of this databse is 'post' .also see in views
     
     STATUS_CHOICES= (
         ('draft','Drafts'),
         ('published','Published'),
                                         )
     title=models.CharField(max_length=50)
+    image=models.ImageField(upload_to = "blogs")
     slug = models.SlugField(max_length=50)
     content=models.TextField()
     seo_title = models.CharField(max_length=50)

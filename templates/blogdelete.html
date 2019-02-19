@@ -1,0 +1,8 @@
+
+<form method = "POST" action="/movie2/blog/{{object.id}}/delete/">
+	{% csrf_token %}
+	
+	<button>Delete</button>
+	<a href="/movie2/blog/list/">cancel</a>
+</form>
+
