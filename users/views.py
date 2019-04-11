@@ -19,3 +19,7 @@ def register(request):
 	else:
 		forms=UserRegisterForm()
 	return render(request, 'users/register.html' , {'form':forms})
+
+
+
+

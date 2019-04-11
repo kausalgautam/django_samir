@@ -11,20 +11,20 @@
 	 
 	<form method ="POST">
 		{% csrf_token %}
-		<h2>JOIN TODAY</h2>
+		<h2>Login</h2>
 
 		
 			{{ form|crispy }}
 
 
 	<br>
-	<button type="submit" class="btn btn-outline-success" style="height:50px;width:100px"  ><h3>Sign Up</h3></button>
+	<button type="submit" class="btn btn-outline-success" style="height:50px;width:100px"  ><h3>Login</h3></button>
 	<hr>
 
 
 
 <div>
-	<strong >Already a member?</strong> <a class="ml-2" href="{% url 'users:login' %}"><h3>Sign In</h3></a>
+	<strong >Need an account?</strong> <a class="ml-2" href="{% url 'users:register' %}"><h3>Sign up</h3></a>
 </div>
 </form>
 	</div>
